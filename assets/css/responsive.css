@@ -1,0 +1,212 @@
+@media (min-width: 769px) and (max-width: 1200px) {
+  .akshay_tritiya_banner {
+    height: auto;
+  }
+  .celebration_sec {
+    padding: 50px 0px;
+  }
+  .cele-left {
+    padding-left: 30px;
+  }
+  .cele-right {
+    padding-right: 30px;
+  }
+  .visit_store_sec {
+    padding: 50px 0 0px;
+  }
+  .zoya_promise {
+    padding: 0px 0px 50px;
+  }
+  .visit_store_box {
+    margin: 0 15px;
+  }
+  .w-\[400px\] {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .akshay_tritiya_banner {
+    height: auto;
+  }
+
+  .mobile_none {
+    display: none !important;
+  }
+  .dekstop_none {
+    display: block !important;
+  }
+  .celebration_img {
+    text-align: center;
+  }
+  .mb-50 {
+    margin-bottom: 50px;
+  }
+  .mainbannertextarea {
+    margin: 50px auto 0;
+  }
+  .dekstop_flex {
+    display: flex !important;
+  }
+  .tritiya_banner_heading {
+    position: absolute;
+    left: 0px;
+    right: 0;
+    top: auto;
+    bottom: 53px;
+    transform: translateY(0%);
+    max-width: 414px;
+    margin: auto;
+    text-align: center;
+  }
+  .tritiya_banner_heading .bann_logo {
+    max-width: 257px;
+    margin: auto;
+  }
+
+  .mainbannertextarea p {
+    font-size: 16px;
+  }
+  .tritiya_banner_heading p {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 289px;
+    margin: auto;
+  }
+  .celebration_sec {
+    padding: 50px 0px 50px 0;
+  }
+  .cele-right {
+    padding-right: 15px;
+  }
+  .cele-left {
+    padding-left: 15px;
+  }
+  .celebration_text {
+    text-align: center;
+  }
+  .visit_store_sec {
+    padding: 50px 0 0px;
+  }
+  .visit_store_box {
+    padding: 27px;
+    margin: 0 16px;
+    transform: translateY(-50px);
+  }
+  .store_btn_main {
+    gap: 0;
+    max-width: 251px;
+    margin: auto;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+  .view_product {
+    width: 280px;
+    margin: 20px auto 0;
+    display: flex;
+  }
+
+  .celebration_sec .view_product {
+    width: 200px;
+    margin: 20px auto 0;
+  }
+
+  .visit_store_box .view_product {
+    width: 100%;
+    margin: 16px auto 0;
+  }
+  /* zoya promise */
+  .mexperience-main {
+    margin: 0px 7px;
+    margin-bottom: 15px;
+    min-height: auto;
+    height: 110px;
+  }
+  .mexperience-main p {
+    font-size: 16px;
+    margin-top: 7px;
+    line-height: 18px;
+  }
+  .mexperience-main .mpro_img img {
+    width: 40px;
+  }
+  .zoya_promise {
+    padding: 0px 8px 50px;
+  }
+  .gift_cart_link {
+    font-size: 14px;
+  }
+  /* .m-reverse{ */
+
+  /* display: flex; */
+  /* -webkit-box-orient: vertical !important; */
+  /* -webkit-box-direction: reverse !important; */
+  /* -ms-flex-direction: column-reverse !important; */
+  /* flex-direction: column-reverse !important; */
+
+  /* } */
+  .mb-24 {
+    margin-bottom: 20px;
+  }
+
+  .m-reverse .celebration_text {
+    margin-top: 20px;
+  }
+  .m-reverse .celebration_img.mb-24 {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  .celebration_text h2 {
+    font-size: 25px;
+  }
+  .celebration_text.text-center.mb-32 {
+    margin-bottom: 20px;
+  }
+  /* .col-12.col-md-6.cele-left.m-reverse{    margin-top: 30px;} */
+  /* } */
+
+  #promisepop .modal-content {
+    border-radius: 0px;
+    height: 100%;
+    overflow-y: auto;
+  }
+  #promisepop .modal-title {
+    font-size: 20px;
+  }
+  #promisepop .modal-header .close {
+    padding: 0;
+    margin: -38px -10px 0 auto;
+  }
+  #promisepop .modal-dialog {
+    margin: 60px 0 0 0;
+    position: fixed;
+    overflow: scroll;
+    height: calc(100vh - 50px);
+  }
+  #promisepop .modal-body {
+    padding: 15px;
+    overflow-y: auto;
+  }
+  #promisepop .pop-element {
+    height: auto;
+    flex-direction: column;
+  }
+  #promisepop .leftp-element {
+    width: 100%;
+  }
+  #promisepop .pop-title {
+    font-size: 16px;
+    color: #2d2d2d;
+    margin-bottom: 8px;
+  }
+  #promisepop .rightp-element {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+}
+@media (max-width: 560px) {
+}

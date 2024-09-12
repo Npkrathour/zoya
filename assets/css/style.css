@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&display=swap");
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/AGaramondPro-Regular.eot");
+  src: url("../fonts/AGaramondPro-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AGaramondPro-Regular.woff2") format("woff2"), url("../fonts/AGaramondPro-Regular.woff") format("woff"),
+    url("../fonts/AGaramondPro-Regular.ttf") format("truetype"),
+    url("../fonts/AGaramondPro-Regular.svg#AGaramondPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/AGaramondPro-Italic.eot");
+  src: url("../fonts/AGaramondPro-Italic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AGaramondPro-Italic.woff2") format("woff2"), url("../fonts/AGaramondPro-Italic.woff") format("woff"),
+    url("../fonts/AGaramondPro-Italic.ttf") format("truetype"),
+    url("../fonts/AGaramondPro-Italic.svg#AGaramondPro-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/AGaramondPro-Bold.eot");
+  src: url("../fonts/AGaramondPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AGaramondPro-Bold.woff2") format("woff2"), url("../fonts/AGaramondPro-Bold.woff") format("woff"),
+    url("../fonts/AGaramondPro-Bold.ttf") format("truetype"),
+    url("../fonts/AGaramondPro-Bold.svg#AGaramondPro-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/AGaramondPro-Semibold.eot");
+  src: url("../fonts/AGaramondPro-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AGaramondPro-Semibold.woff2") format("woff2"),
+    url("../fonts/AGaramondPro-Semibold.woff") format("woff"),
+    url("../fonts/AGaramondPro-Semibold.ttf") format("truetype"),
+    url("../fonts/AGaramondPro-Semibold.svg#AGaramondPro-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Adobe Garamond Pro";
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover,
+a,
+a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.full-height {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+button:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.mainbannertextarea {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 65px auto 0;
+}
+
+.mainbannertextarea p {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #2d2d2d;
+  font-size: 16px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.akshay_tritiya_banner {
+  height: calc(100% - 66px);
+}
+.akshay_tritiya_banner img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.tritiya_banner_heading {
+  position: absolute;
+  left: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 414px;
+}
+/* .tritiya_banner_heading .bann_logo{width: 228px;} */
+.tritiya_banner_heading p {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+.dekstop_none {
+  display: none !important;
+}
+.dekstop_flex {
+  display: none !important;
+}
+/* celebaration section */
+
+.celebration_text h2 {
+  color: #2d2d2d;
+  font-size: 35px;
+  margin-bottom: 0;
+}
+.celebration_text p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 0px;
+  color: #2d2d2d;
+}
+
+.cate_slider_main .slick-slide img {
+  width: 100%;
+}
+.view_product {
+  font-size: 16px !important;
+  font-weight: normal;
+  padding: 9px 48px;
+  border: 1px solid #c49884;
+  height: 40px;
+  display: inline-flex;
+  align-items: end;
+  justify-content: center;
+  margin-top: 16px;
+  transition: 0.3s;
+  background: #fff;
+  color: #c49884 !important;
+  /* text-transform: uppercase;  */
+  line-height: normal;
+}
+
+.view_product:hover {
+  background: #c49884;
+  color: #fff !important;
+}
+
+.celebration_sec {
+  padding: 70px 120px;
+}
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.cele-left {
+  padding-left: 75px;
+}
+.cele-right {
+  padding-right: 75px;
+}
+.heading_phara {
+  max-width: 504px;
+  margin: auto;
+}
+
+/* zoya promise */
+.zoya_promise {
+  padding: 0px 120px 70px;
+}
+.mexperience-main {
+  padding: 16px;
+  text-align: center;
+  border: 1px solid rgba(45, 45, 45, 0.4);
+  /* border-right: none; */
+  min-height: 153px;
+  margin: 0px 10px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mpro_img {
+  text-align: center;
+  cursor: pointer;
+}
+.mexperience-main p {
+  color: #2d2d2d;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.discover_icon {
+  opacity: 0;
+  transition: opacity 0.3s;
+  margin-top: 10px;
+  text-align: center;
+  color: #c49884;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discover_icon .arrow {
+  width: 16px !important;
+  margin-left: 5px;
+}
+.visit_store_sec {
+  padding: 70px 0 0px;
+  overflow-x: hidden;
+}
+.gift_cart_link {
+  color: #9c4b20 !important;
+  margin: auto;
+  font-size: 18px;
+  display: block;
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+  transition: 0.3s;
+  /* text-transform: uppercase; */
+}
+.gift_cart_link:hover {
+  color: #9c4b20 !important;
+}
+.visit_store_box {
+  /* bottom: -67px; */
+  transform: translateY(-70px);
+  box-shadow: 0px 3px 6px #00000029;
+  max-width: 1160px;
+  margin: auto;
+  background-color: #fff;
+  text-align: center;
+  padding: 25px 115px;
+  font-size: 16px;
+  color: #2d2d2d;
+}
+.visit_store_box p {
+  max-width: 656px;
+  margin: 0 auto 0px;
+  color: #2d2d2d;
+}
+.store_btn_main {
+  gap: 25px;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.gap-18 {
+  gap: 18px;
+}
+
+.basis-full {
+  flex-basis: 100%;
+}
+
+.w-\[400px\] {
+  width: 70vw;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+.cel_selec_text {
+  max-width: 504px;
+  margin: auto;
+}
+.card {
+  border-radius: 0;
+  height: 100%;
+  border: 0;
+}
+.card img {
+  height: 100%;
+  object-fit: cover;
+}
+#cate_slider .slide-item {
+  padding: 0 16px 0 0;
+}
+
+/* promise pop start */
+#promisepop .modal-title {
+  font-size: 35px;
+  text-align: center;
+}
+
+#promisepop .modal-header {
+  display: block;
+  border-bottom: transparent;
+  padding-bottom: 0px;
+}
+
+#promisepop .modal-header .close {
+  padding: 1rem 1rem;
+  margin: -4rem 0rem 0rem auto;
+}
+
+#promisepop .pop-element {
+  display: flex;
+  align-items: center;
+  border: 0.2px solid rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  height: 153px;
+}
+
+#promisepop .leftp-element {
+  width: 25%;
+  text-align: center;
+}
+
+#promisepop .modal-body {
+  padding: 15px 32px;
+}
+
+#promisepop .rightp-element {
+  font-size: 20px;
+  color: #2d2d2d;
+  line-height: 30px;
+  text-align: left;
+  width: 75%;
+}
+
+#promisepop .pop-title {
+  margin-top: 6px;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #2d2d2d;
+}
+.reserve-pop .modal-dialog {
+  max-width: 982px;
+}
+.brn-btnss {
+  margin-top: 24px;
+}
+.discover_icon {
+  opacity: 0;
+  transition: opacity 0.3s;
+  margin-top: 10px;
+  text-align: center;
+  color: #c49884;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discover_icon .arrow {
+  width: 16px !important;
+  margin-left: 5px;
+}
+
+/* promise pop end */
+
+.footer-drawer-connect {
+  margin-bottom: 16px;
+}
+
+.footer-drawer-connect-content-wrapper {
+  font-size: 16px;
+  line-height: 1.4em;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.25s ease-in-out;
+}
+
+/* .footer-drawer-connect-title {
+    font-family: $font;
+    font-size: 20px;
+    padding-bottom: 16px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    border-bottom: 0.5px solid rgba(234, 211, 185, 0.3);
+    font-weight: 400;
+    width: 100%;
+    display: inline-block;
+} */
+
+.footer-drawer-connect-title::after {
+  border-style: solid;
+  border-width: 1.5px 1.5px 0 0;
+  content: " ";
+  display: inline-block;
+  /* float: right; */
+  height: 12px;
+  left: 2px;
+  position: relative;
+  right: 20px;
+  top: 2px;
+  transform: rotate(135deg);
+  transition: 0.35s ease-in-out;
+  vertical-align: top;
+  width: 12px;
+  color: white;
+}
+
+/* OPTIONAL HOVER STATE */
+.footer-drawer-connect-title:hover {
+  color: #ffffff;
+}
+
+.footer-drawer-connect-trigger:checked + .footer-drawer-connect-title + .footer-drawer-connect-content-wrapper {
+  max-height: 350px;
+  border-bottom: 0.5px solid rgba(234, 211, 185, 0.3);
+}
+
+.footer-drawer-connect-trigger:checked + .footer-drawer-connect-title::after {
+  transform: rotate(-45deg);
+  transition: 0.25s ease-in-out;
+}
+
+@media (min-width: 1050px) and (max-width: 1230px) {
+  .shfooter ul.newfootsocial li a {
+    padding-right: 11px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1050px) {
+  .shfooter ul.newfootsocial li a {
+    padding-right: 8px;
+  }
+}
+@media all and (max-width: 991px) {
+  .newfootsocial {
+    margin: 25px auto 0;
+    text-align: center;
+  }
+  .newfootsocial a {
+    padding: 0 15px;
+  }
+}
+
+/* ==========================New zoya css=============== */
+.zoya-product-details {
+  & .zoya-products-details h2 {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "agaramondpro-regular";
+    padding: 15px 0;
+  }
+  & h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  & span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  & p {
+    color: #363636;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.zoya-lifestyle-box {
+  & .zoya-lifestyle-image {
+    width: 100%;
+    height: 100%;
+  }
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.pt-6 {
+  margin: 65px 0;
+}
