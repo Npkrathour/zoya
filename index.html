@@ -615,48 +615,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
     <script>
-        // gsap.registerPlugin(ScrollTrigger);
-        // gsap.from(".product-videos", {
-        //     duration: 2,
-        //     scale: 0.3,
-        //     scrollTrigger: {
-        //         trigger: ".product-videos",
-        //         scroller: "body",
-        //         start: "top 85%",
-        //         end: "top 20%",
-        //         scrub: 2,
-        //         markers: true,
-        //     },
-        // });
-
-        // gsap.from(".zoya-lifestyle-image", {
-        //     duration: 2,
-        //     scale: 0.5,
-        //     scrollTrigger: {
-        //         trigger: ".zoya-lifestyle-image",
-        //         scroller: "body",
-        //         start: "top 80%",
-        //         end: "top 50%",
-        //         scrub: 1,
-        //         markers: true,
-        //     },
-        // });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // /////////////////////////////
-
         gsap.registerPlugin(ScrollTrigger);
 
         // Function to apply GSAP animations based on media queries
@@ -679,6 +637,7 @@
                 gsap.from(".zoya-lifestyle-image", {
                     duration: 2,
                     scale: 0.5,
+                    opacity: 0,
                     scrollTrigger: {
                         trigger: ".zoya-lifestyle-image",
                         scroller: "body",
