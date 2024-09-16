@@ -599,24 +599,22 @@ html.lenis body {
 .text-split-container {
   font-size: 25px;
 }
+/* .zoya-below-banner-section {
+  background-image: url(../images/zoya-below-banner.png);
+  width: 100%;
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
+} */
 /* =============================== */
 .px-8 {
   padding: 65px 100px;
 }
 .zoya-products.videos {
   margin-top: -40%;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: #ffffff;
-  z-index: 9;
-  opacity: 0.8;
 }
 
 .products-overlay {
@@ -669,4 +667,36 @@ html.lenis body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.zoya-details-section {
+  position: sticky;
+  top: 0; /* or any other value */
+}
+
+.zoya-details-section {
+  position: relative; /* Initial position */
+  top: 0;
+  width: 100%; /* Start with full width */
+}
+
+.zoya-banner {
+  height: 100vh; /* Makes sure the banner occupies full viewport height */
+}
+
+.zoya-desktop-banner img,
+.zoya-mobile-banner img {
+  object-fit: cover; /* Ensures the image covers its container */
+}
+
+/* ===================== */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 9;
+  opacity: 1;
 }
