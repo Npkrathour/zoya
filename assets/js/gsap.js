@@ -40,6 +40,18 @@ ScrollTrigger.matchMedia({
         scrub: "true",
       },
     );
+    gsap.to(".overlay", {
+      width: "0%", // Animate width to 0%
+      opacity: 0, // Animate opacity to 0
+      duration: 1, // Duration of the animation
+      scrollTrigger: {
+        trigger: ".products-section",
+        scrub: 3,
+        start: "10 50%",
+        end: "bottom top",
+        markers: true,
+      },
+    });
   },
 });
 
