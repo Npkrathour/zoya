@@ -26,41 +26,6 @@ gsap.to(".zoya-details-section", {
 ScrollTrigger.matchMedia({
   // Desktop: min-width 1024px
   "(min-width: 1024px)": function () {
-    // Animations for desktop
-    gsap.set(".overlay", {
-      width: "100%",
-      opacity: 1,
-    });
-
-    gsap.to(".overlay", {
-      width: "0%",
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".products-section",
-        start: "top 80%",
-        end: "top 10%",
-        scrub: 2,
-      },
-    });
-
-    gsap.set(".signature-image-container-overlay", {
-      width: "100%",
-      opacity: 1,
-    });
-
-    gsap.to(".signature-image-container-overlay", {
-      width: "0%",
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".signature-section",
-        start: "10% 90%",
-        scrub: 2,
-      },
-    });
-
-    // ================Text Animation==========
     gsap.fromTo(
       ".alive-content ul li",
       {
@@ -75,80 +40,6 @@ ScrollTrigger.matchMedia({
         scrub: "true",
       },
     );
-  },
-
-  // Tablet: 768px to 1023px
-  "(min-width: 768px) and (max-width: 1023px)": function () {
-    // Animations for tablets
-    gsap.set(".overlay", {
-      width: "100%",
-      opacity: 1,
-    });
-
-    gsap.to(".overlay", {
-      width: "0%",
-      opacity: 0,
-      duration: 1.5, // Slower duration for tablets
-      scrollTrigger: {
-        trigger: ".products-section",
-        start: "top 70%",
-        end: "top 20%",
-        scrub: 2,
-      },
-    });
-
-    gsap.set(".signature-image-container-overlay", {
-      width: "100%",
-      opacity: 1,
-    });
-
-    gsap.to(".signature-image-container-overlay", {
-      width: "0%",
-      opacity: 0,
-      duration: 1.5,
-      scrollTrigger: {
-        trigger: ".signature-section",
-        start: "20% 80%",
-        scrub: 2,
-      },
-    });
-  },
-
-  // Mobile: max-width 767px
-  "(max-width: 767px)": function () {
-    // Animations for mobile
-    gsap.set(".overlay", {
-      width: "100%",
-      opacity: 1,
-    });
-
-    gsap.to(".overlay", {
-      width: "0%",
-      opacity: 0,
-      duration: 2,
-      scrollTrigger: {
-        trigger: ".products-section",
-        start: "top 60%",
-        end: "top 30%",
-        scrub: 2,
-      },
-    });
-
-    gsap.set(".signature-image-container-overlay", {
-      width: "100%",
-      opacity: 1,
-    });
-
-    gsap.to(".signature-image-container-overlay", {
-      width: "0%",
-      opacity: 0,
-      duration: 2,
-      scrollTrigger: {
-        trigger: ".signature-section",
-        start: "30% 70%",
-        scrub: 2,
-      },
-    });
   },
 });
 
