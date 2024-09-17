@@ -50,7 +50,7 @@ ScrollTrigger.matchMedia({
         scrub: 1,
         start: "top 50%",
         end: "bottom 20%",
-        markers: true,
+        // markers: true,
         toggleActions: "play none none reverse",
       },
     });
