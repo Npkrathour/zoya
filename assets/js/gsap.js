@@ -41,14 +41,13 @@ ScrollTrigger.matchMedia({
       },
     );
     gsap.to(".overlay", {
-      width: "0%", 
-      opacity: 0, 
-      duration: 1, 
+      width: "0%",
+      opacity: 0,
+      duration: 1,
       scrollTrigger: {
         trigger: ".products-section",
         scrub: 3,
-        start: "10 50%",
-        end: "end -10%",
+        start: "top 50%",
         markers: true,
       },
     });
