@@ -1169,8 +1169,3 @@ html.lenis body {
   z-index: 99;
   opacity: 1;
 }
-
-.products-box {
-  width: 100%; /* Initial width */
-  opacity: 1; /* Initial opacity */
-}

@@ -41,14 +41,17 @@ ScrollTrigger.matchMedia({
       },
     );
     gsap.to(".overlay", {
-      width: "0%",
+      width: "0",
       opacity: 0,
       duration: 1,
+      ease: "power2.out",
       scrollTrigger: {
         trigger: ".products-section",
-        scrub: 3,
+        scrub: 1,
         start: "top 50%",
+        end: "bottom 20%",
         markers: true,
+        toggleActions: "play none none reverse",
       },
     });
   },
