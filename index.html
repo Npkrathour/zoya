@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://staticimg.zoya.in/Banners/Alight2/assets/css/style.css" />
     <link rel="stylesheet" href="https://staticimg.zoya.in/Banners/Alight2/assets/css/responsive.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/skin.css">
@@ -175,7 +176,11 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-7 col-md-6 col-12 my-3 d-lg-block d-md-block d-none">
                     <div class="alive-content">
-                        <h2>Lorem ipsum dolor</h2>
+                        <ul class="d-flex align-items-center">
+                            <li>Lorem </li>
+                            <li>ipsum </li>
+                            <li>dollar</li>
+                        </ul>
                         <p>Lorem ipsum dolor sit amet, nec porro liber legendos te.</p>
                     </div>
                 </div>
@@ -197,7 +202,7 @@
     <section class="split-text py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-8">
+                <div class="col-lg-8 col-12">
                     <div class="text-center">
                         <h2>alive</h2>
                         <p class="reveal">
@@ -211,7 +216,7 @@
         </div>
     </section>
     <!-- ==================prducts details  banner============= -->
-    <section class="zoya-details-section position">
+    <section class="zoya-details-section position overflow-hidden">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-12 p-0">
@@ -247,20 +252,49 @@
         </div>
     </section>
     <!-- ================Banner below section========== -->
-    <section class="text-container-split my-5 py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <div class="text-center">
-                        <h2>Wildflower Essence, Eternally Captured</h2>
-                        <p class="text-split-container pt-2">
-                            The 'Alive' collection captures the essence of wildflowers, blending nature's beauty with
-                            luxury. Each piece is a tribute to the wild, featuring intricate, signature cuts and the
-                            vibrant brilliance of rare gemstones, bringing nature’s energy to life in timeless elegance.
-                        </p>
+
+    <!-- Swiper -->
+    <section class="slider-section my-5 py-5">
+        <div class="slider-details">
+            <div class="text-center">
+                <h2>Wildflower Essence, Eternally Captured</h2>
+                <p class="text-split-container pt-2">
+                    The 'Alive' collection captures the essence of wildflowers, blending nature's beauty with
+                    luxury. Each piece is a tribute to the wild, featuring intricate, signature cuts and the
+                    vibrant brilliance of rare gemstones, bringing nature’s energy to life in timeless elegance.
+                </p>
+            </div>
+        </div>
+        <div class="swiper-container two">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider-image">
+                        <img src="assets/images/main-slider.png" alt="slide 1">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-image">
+                        <img src="assets/images/slide-1.png" alt="slide 2">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-image">
+                        <img src="assets/images/slide-2.png" alt="slide 3">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-image">
+                        <img src="assets/images/main-slider.png" alt="slide 4">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-image">
+                        <img src="assets/images/slide-1.png" alt="slide 5">
                     </div>
                 </div>
             </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination d-lg-none d-md-none d-block"></div>
         </div>
     </section>
 
@@ -274,16 +308,18 @@
             </div>
             <div class="row justify-content-between">
                 <div class="col-lg-6 col-md-6 col-12 my-3 p-3">
-                    <div class="signature-image-container">
+                    <div class="signature-image-container position-relative">
                         <img class="" src="./assets/images/signature-image-1.png" alt="">
+                        <div class="signature-image-container-overlay"></div>
                     </div>
                     <div class="py-4 text-center">
                         <h3>Products Name</h3>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12 my-3 p-3">
-                    <div class="signature-image-container">
+                    <div class="signature-image-container position-relative">
                         <img class="" src="./assets/images/signature-image-2.png" alt="">
+                        <div class="signature-image-container-overlay"></div>
                     </div>
                     <div class="py-4 text-center">
                         <h3>Products Name</h3>
@@ -325,22 +361,23 @@
                     <div class="zoya-products text-center position-relative">
                         <div class="products-box">
                             <img class="w-100 img-fluid" src="./assets/images/product-3.png" alt="Product 3">
+                            <div class="overlay"></div>
                         </div>
                         <div class="py-4">
                             <h3>Product Name 3</h3>
                         </div>
-                        <div class="overlay"></div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12 my-3 p-3">
-                    <div class="zoya-products text-center position-relative">
-                        <div class="products-box">
+                    <div class="zoya-products text-center">
+                        <div class="products-box position-relative">
                             <img class="w-100 img-fluid" src="./assets/images/product-4.png" alt="Product 4">
+                            <div class="overlay"></div>
                         </div>
                         <div class="py-4">
                             <h3>Product Name 4</h3>
                         </div>
-                        <div class="overlay"></div>
+
                     </div>
 
 
@@ -350,41 +387,7 @@
     </section>
 
 
-    <!-- ================== -->
-    <!-- <section class="samave-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-12 p-5">
-                    <div class="zoya-products videos text-center">
-                        <div class="products-box position-relative">
-                            <video autoplay="" class="videot" height="100%" id="v_video2" loop="" muted=""
-                                playsinline="" width="100%">
-                                <source src="https://staticimg.zoya.in/videos/samave_vertical2.mp4" type="video/mp4">
-                            </video>
-                            <div class="products-overlay-videos"></div>
 
-                        </div>
-                        <div class="py-4">
-                            <h2>Products Name</h2>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12 my-3">
-                    <div class="zoya-products text-center" style="padding: 50px 80px;">
-                        <img class="" src="./assets/images/quotes.png" alt="">
-                        <div class=" py-5">
-                            <h3>Lorem ipsum dolor sit amet, vix in dolore phaedrum, rebum facer ocurreret te quo. Mel
-                                ipsum offendit facilisis an, ad tation noster qui, an modo assum eloquentiam duo. Per
-                                soluta noster ut. Periculis sadipscing est cu </h3>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <!-- ===========Footer section============ -->
 
     </section>
@@ -773,6 +776,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/gsap.js"></script>
 
 </body>
