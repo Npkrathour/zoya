@@ -35,7 +35,7 @@ ScrollTrigger.matchMedia({
       {
         y: 0,
         opacity: 1,
-        duration: 1.5,
+        duration: 1,
         stagger: 1,
         scrub: "true",
       },
@@ -150,117 +150,6 @@ gsap.utils.toArray(".signature-image-overlay").forEach((overlay, i) => {
     );
 });
 // ====================Wildflower Essance section=========
-const tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".slider-section",
-    start: "top 75%",
-    end: "top center",
-    scrub: 2,
-  },
-});
-
-// Add the animation to the timeline
-tl.fromTo(
-  ".slider-section h2",
-  {
-    y: 50,
-    opacity: 0,
-  },
-  {
-    y: 0,
-    opacity: 1,
-    duration: 2,
-    ease: "power2.out",
-  },
-);
-tl.fromTo(
-  ".slider-section p",
-  {
-    y: 50,
-    opacity: 0,
-  },
-  {
-    y: 0,
-    opacity: 1,
-    duration: 2,
-    ease: "power2.out",
-  },
-);
-// ========================Signature section===========
-const tl2 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".signature-section",
-    start: "top 75%",
-    end: "top center",
-    scrub: 2,
-  },
-});
-
-// Add the animation to the timeline
-tl2.fromTo(
-  ".signature-section h2",
-  {
-    y: 50,
-    opacity: 0,
-  },
-  {
-    y: 0,
-    opacity: 1,
-    duration: 2,
-    ease: "power2.out",
-  },
-);
-tl2.fromTo(
-  ".signature-section p",
-  {
-    y: 50,
-    opacity: 0,
-  },
-  {
-    y: 0,
-    opacity: 1,
-    duration: 2,
-    ease: "power2.out",
-  },
-);
-
-// ========================Signature section===========
-const tl3 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".products-section",
-    start: "top 75%",
-    end: "top center",
-    scrub: 2,
-  },
-});
-
-// Add the animation to the timeline
-tl3.fromTo(
-  ".products-section h2",
-  {
-    y: 50,
-    opacity: 0,
-  },
-  {
-    y: 0,
-    opacity: 1,
-    duration: 2,
-    ease: "power2.out",
-  },
-);
-tl3.fromTo(
-  ".products-section p",
-  {
-    y: 50,
-    opacity: 0,
-  },
-  {
-    y: 0,
-    opacity: 1,
-    duration: 2,
-    ease: "power2.out",
-  },
-);
 
 // ==============Swipper slider ============
 var swiper = new Swiper(".swiper-container.two", {
