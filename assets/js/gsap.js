@@ -40,25 +40,26 @@ ScrollTrigger.matchMedia({
         scrub: "true",
       },
     );
+    // Ensure ScrollTrigger is registered
+    gsap.registerPlugin(ScrollTrigger);
+
     gsap.to(".overlay", {
-      width: "0",
+      width: "0", // Ensure .overlay has an initial width
       opacity: 0,
       duration: 1,
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".products-section",
         scrub: 1,
-        start: "top 50%",
-        end: "bottom 20%",
-        // markers: true,
-        toggleActions: "play none none reverse",
+        start: "top 50%", // Adjust based on actual layout
+        markers: true, // Enable markers for debugging
+        toggleActions: "play none none reverse", // Play on scroll, reverse on scroll up
       },
     });
   },
 });
 
-////////////////////////////
-
+// ==============Swipper slider ============
 var swiper = new Swiper(".swiper-container.two", {
   pagination: {
     el: ".swiper-pagination",
@@ -67,7 +68,7 @@ var swiper = new Swiper(".swiper-container.two", {
   effect: "coverflow",
   loop: true,
   centeredSlides: true,
-  slidesPerView: 3, // Default for larger screens (desktop)
+  slidesPerView: 3,
   spaceBetween: 30,
   coverflowEffect: {
     rotate: 0,
