@@ -167,19 +167,20 @@ gsap.utils.toArray(".signature-image-overlay").forEach((overlay, i) => {
 });
 
 // Animate the section title and description
-const signatureContent = signatureSection.querySelector(".signature-content");
-gsap.from(signatureContent.children, {
-  y: 30,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.2,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: signatureSection,
-    start: "top 80%",
-    once: true,
-  },
-});
+// const signatureContent = signatureSection.querySelector(".signature-content");
+// gsap.from(signatureContent.children, {
+//   y: 30,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.2,
+//   ease: "power2.out",
+//   scrollTrigger: {
+//     trigger: signatureSection,
+//     start: "top 80%",
+//     once: true,
+//   },
+// });
+
 // ==============Swipper slider ============
 var swiper = new Swiper(".swiper-container.two", {
   pagination: {
