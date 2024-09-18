@@ -1146,10 +1146,10 @@ html.lenis body {
   object-fit: cover;
 }
 
-.products-box {
+/* .products-box {
   width: 100%;
   height: 500px;
-}
+} */
 .products-box img {
   width: 100%;
   height: 100%;
@@ -1159,7 +1159,7 @@ html.lenis body {
 .products-box {
   position: relative;
 }
-.overlay {
+/* .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1168,4 +1168,95 @@ html.lenis body {
   background-color: #ffffff;
   z-index: 99;
   opacity: 1;
+} */
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: right;
+}
+.product-image {
+  transition: transform 0.5s ease-out;
+}
+.products-box:hover .product-image {
+  transform: scale(1.05);
+}
+.product-title {
+  position: relative;
+  display: inline-block;
+}
+.product-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+.products-box:hover .product-title::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+
+
+
+
+.signature-image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+.signature-image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: right;
+}
+.signature-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-out;
+}
+.signature-product:hover .signature-image {
+  transform: scale(1.05);
+}
+.signature-product-title {
+  position: relative;
+  display: inline-block;
+}
+.signature-product-title::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+.signature-product:hover .signature-product-title::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }

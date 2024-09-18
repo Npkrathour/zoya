@@ -44,23 +44,142 @@ ScrollTrigger.matchMedia({
   },
 });
 
+// gsap.registerPlugin(ScrollTrigger);
+
+// gsap.to(".overlay", {
+//   width: "0",
+//   opacity: 0,
+//   duration: 1,
+//   ease: "power2.out",
+//   scrollTrigger: {
+//     trigger: ".products-section",
+//     scrub: 1,
+//     start: "top 50%",
+//     end: "top -100%",
+//     markers: true,
+//     toggleActions: "play none none reverse",
+//   },
+// });
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".overlay", {
-  width: "0",
-  opacity: 0,
-  duration: 1,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: ".products-section",
-    scrub: 1,
-    start: "top 50%",
-    end: "top -100%",
-    markers: true,
-    toggleActions: "play none none reverse",
-  },
+const section = document.querySelector(".products-section");
+
+gsap.utils.toArray(".image-overlay").forEach((overlay, i) => {
+  const container = overlay.closest(".zoya-products");
+  const image = container.querySelector(".product-image");
+  const title = container.querySelector(".product-title");
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: section,
+      start: "top 120%",
+      end: "top 50%",
+      toggleActions: "play none none reverse",
+      // once: true,
+      scrub: "true",
+    },
+  });
+
+  tl.fromTo(
+    overlay,
+    { scaleX: 1 },
+    {
+      scaleX: 0,
+      duration: 1.5,
+      ease: "power2.inOut",
+    },
+  )
+    .fromTo(
+      image,
+      { scale: 1.1, opacity: 0 },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out",
+      },
+      "-=1",
+    )
+    .fromTo(
+      title,
+      { y: 20, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        ease: "back.out(1.7)",
+      },
+      "-=0.5",
+    );
 });
 
+gsap.registerPlugin(ScrollTrigger);
+
+const signatureSection = document.querySelector(".signature-section");
+
+gsap.utils.toArray(".signature-image-overlay").forEach((overlay, i) => {
+  const container = overlay.closest(".signature-product");
+  const image = container.querySelector(".signature-image");
+  const title = container.querySelector(".signature-product-title");
+
+  const signatureTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: signatureSection,
+      start: "top 120%",
+      end: "top 50%",
+      toggleActions: "play none none reverse",
+      scrub: "true",
+    },
+  });
+
+  signatureTl
+    .fromTo(
+      overlay,
+      { scaleX: 1 },
+      {
+        scaleX: 0,
+        duration: 1.5,
+        ease: "power2.inOut",
+      },
+    )
+    .fromTo(
+      image,
+      { scale: 1.1, opacity: 0 },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out",
+      },
+      "-=1",
+    )
+    .fromTo(
+      title,
+      { y: 20, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        ease: "back.out(1.7)",
+      },
+      "-=0.5",
+    );
+});
+
+// Animate the section title and description
+const signatureContent = signatureSection.querySelector(".signature-content");
+gsap.from(signatureContent.children, {
+  y: 30,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.2,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: signatureSection,
+    start: "top 80%",
+    once: true,
+  },
+});
 // ==============Swipper slider ============
 var swiper = new Swiper(".swiper-container.two", {
   pagination: {
