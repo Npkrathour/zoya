@@ -194,3 +194,21 @@ var swiper = new Swiper(".swiper-container.two", {
     },
   },
 });
+
+function openModal() {
+  var one = document.getElementById("modal-btn");
+  if (one.classList.contains("show")) {
+    one.classList.remove("show");
+  } else {
+    one.classList.add("show");
+  }
+}
+
+function openModalTwo() {
+  var two = document.getElementById("modal-btn-1");
+  if (two.classList.contains("show")) {
+    two.classList.remove("show");
+  } else {
+    two.classList.add("show");
+  }
+}
