@@ -227,7 +227,7 @@ tl2.fromTo(
 // ========================Signature section===========
 const tl3 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".reveal-section",
+    trigger: ".products-section",
     start: "top 75%",
     end: "top center",
     scrub: 2,
