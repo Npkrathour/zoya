@@ -208,12 +208,25 @@
     text-align: center;
   }
   .reveal-section {
-    background-image: url(../images/Zoya\ 2024_Day1\ 099\ 1_mobile.png);
+    background-image: url(../images/unconditional-mobile-size.png);
     width: 100%;
-    height: 650px;
+    height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+  .reveal-section {
+    & h1 {
+      font-size: 30px;
+      text-align: center !important;
+    }
+    .cta-box.pt-4 {
+      display: flex;
+      justify-content: center;
+    }
+    .row {
+      height: auto !important;
+    }
   }
   /* =======================New Css of Zoya======== */
   .signature-section {
@@ -225,6 +238,27 @@
     & p {
       padding: 10px 0%;
     }
+  }
+  .signature-section {
+    & h2 {
+      font-size: 26px;
+    }
+  }
+  .slider-details {
+    & h2 {
+      font-size: 26px;
+    }
+    & p {
+      padding: 50px 10px;
+    }
+  }
+  .products-section {
+    & h2 {
+      font-size: 26px;
+    }
+  }
+  .signature-image-container {
+    height: auto;
   }
 }
 @media (max-width: 560px) {
