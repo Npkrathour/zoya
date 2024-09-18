@@ -468,12 +468,17 @@ button:focus {
 }
 
 /* ==========================New zoya css=============== */
+:root {
+  --blackColor: #2d2d2d;
+  --ctaColor: #c49884;
+  --fontColor: #c98979;
+}
 .split-text {
   & h2 {
     font-size: 36px;
     font-weight: 500;
     padding: 20px 0;
-    color: #c49884;
+    color: var(--fontColor);
   }
   & p {
     font-size: 16px;
@@ -490,7 +495,7 @@ button:focus {
   & h2 {
     font-size: 36px;
     font-weight: 500;
-    color: #c49884;
+    color: var(--fontColor);
   }
   & p {
     font-size: 16px;
@@ -502,7 +507,7 @@ button:focus {
   & h2 {
     font-size: 36px;
     font-weight: 500;
-    color: #c49884;
+    color: var(--fontColor);
   }
   & p {
     font-size: 18px;
@@ -512,14 +517,14 @@ button:focus {
   & h3 {
     font-size: 26px;
     font-weight: 500;
-    color: #000000;
+    color: var(--ctaColor);
   }
 }
 .products-section {
   & h2 {
     font-size: 36px;
     font-weight: 500;
-    color: #c49884;
+    color: var(--fontColor);
   }
   & p {
     font-size: 18px;
@@ -529,7 +534,7 @@ button:focus {
   & h3 {
     font-size: 26px;
     font-weight: 500;
-    color: #000000;
+    color: var(--ctaColor);
   }
 }
 html.lenis,
@@ -585,7 +590,7 @@ html.lenis body {
   & h1 {
     font-size: 40px;
     font-weight: 500;
-    color: #c49884;
+    color: var(--fontColor);
   }
   & p {
     font-size: 46px;
@@ -594,8 +599,8 @@ html.lenis body {
   & a {
     font-size: 18px;
     font-weight: 500;
-    color: #c49884;
-    border: 2px solid #c49884;
+    color: var(--ctaColor);
+    border: 2px solid var(--ctaColor);
     border-radius: 0;
   }
 }
@@ -620,7 +625,7 @@ html.lenis body {
   margin-top: -40%;
 }
 
-.products-overlay {
+/* .products-overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -629,10 +634,10 @@ html.lenis body {
   background-color: #ffffff;
   z-index: 9;
   opacity: 0.8;
-}
+} */
 
 /* ================ */
-.products-overlay-videos {
+/* .products-overlay-videos {
   position: absolute;
   top: 0;
   left: 0;
@@ -641,7 +646,7 @@ html.lenis body {
   background-color: #ffffff;
   opacity: 1;
   z-index: 9;
-}
+} */
 .desktop-image {
   width: 100%;
   height: 550px;
@@ -1246,9 +1251,14 @@ html.lenis body {
 }
 
 .cta-box a {
-  border: 2px solid #c49884;
+  border: 2px solid var(--ctaColor);
   border-radius: 0;
   padding: 10px 30px;
   font-size: 16px;
   font-weight: 500;
+  color: var(--ctaColor);
+}
+.cta-box a:hover {
+  border: 2px solid var(--ctaColor);
+  color: var(--ctaColor);
 }
