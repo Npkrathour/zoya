@@ -44,22 +44,6 @@ ScrollTrigger.matchMedia({
   },
 });
 
-// gsap.registerPlugin(ScrollTrigger);
-
-// gsap.to(".overlay", {
-//   width: "0",
-//   opacity: 0,
-//   duration: 1,
-//   ease: "power2.out",
-//   scrollTrigger: {
-//     trigger: ".products-section",
-//     scrub: 1,
-//     start: "top 50%",
-//     end: "top -100%",
-//     markers: true,
-//     toggleActions: "play none none reverse",
-//   },
-// });
 gsap.registerPlugin(ScrollTrigger);
 
 const section = document.querySelector(".products-section");
@@ -165,21 +149,118 @@ gsap.utils.toArray(".signature-image-overlay").forEach((overlay, i) => {
       "-=0.5",
     );
 });
+// ====================Wildflower Essance section=========
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".slider-section",
+    start: "top 75%",
+    end: "top center",
+    scrub: 2,
+  },
+});
 
-// Animate the section title and description
-// const signatureContent = signatureSection.querySelector(".signature-content");
-// gsap.from(signatureContent.children, {
-//   y: 30,
-//   opacity: 0,
-//   duration: 1,
-//   stagger: 0.2,
-//   ease: "power2.out",
-//   scrollTrigger: {
-//     trigger: signatureSection,
-//     start: "top 80%",
-//     once: true,
-//   },
-// });
+// Add the animation to the timeline
+tl.fromTo(
+  ".slider-section h2",
+  {
+    y: 50,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    ease: "power2.out",
+  },
+);
+tl.fromTo(
+  ".slider-section p",
+  {
+    y: 50,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    ease: "power2.out",
+  },
+);
+// ========================Signature section===========
+const tl2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".signature-section",
+    start: "top 75%",
+    end: "top center",
+    scrub: 2,
+  },
+});
+
+// Add the animation to the timeline
+tl2.fromTo(
+  ".signature-section h2",
+  {
+    y: 50,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    ease: "power2.out",
+  },
+);
+tl2.fromTo(
+  ".signature-section p",
+  {
+    y: 50,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    ease: "power2.out",
+  },
+);
+
+// ========================Signature section===========
+const tl3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".reveal-section",
+    start: "top 75%",
+    end: "top center",
+    scrub: 2,
+  },
+});
+
+// Add the animation to the timeline
+tl3.fromTo(
+  ".products-section h2",
+  {
+    y: 50,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    ease: "power2.out",
+  },
+);
+tl3.fromTo(
+  ".products-section p",
+  {
+    y: 50,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    ease: "power2.out",
+  },
+);
 
 // ==============Swipper slider ============
 var swiper = new Swiper(".swiper-container.two", {

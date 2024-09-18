@@ -215,6 +215,17 @@
     background-size: cover;
     background-position: center;
   }
+  /* =======================New Css of Zoya======== */
+  .signature-section {
+    & p {
+      padding: 10px 0%;
+    }
+  }
+  .products-section {
+    & p {
+      padding: 10px 0%;
+    }
+  }
 }
 @media (max-width: 560px) {
 }
