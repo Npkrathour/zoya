@@ -41,21 +41,23 @@ ScrollTrigger.matchMedia({
       },
     );
     // Ensure ScrollTrigger is registered
-    gsap.registerPlugin(ScrollTrigger);
+  },
+});
 
-    gsap.to(".overlay", {
-      width: "0", // Ensure .overlay has an initial width
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: ".products-section",
-        scrub: 1,
-        start: "top 50%", // Adjust based on actual layout
-        markers: true, // Enable markers for debugging
-        toggleActions: "play none none reverse", // Play on scroll, reverse on scroll up
-      },
-    });
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".overlay", {
+  width: "0",
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".products-section",
+    scrub: 1,
+    start: "top 50%",
+    end: "top -100%",
+    markers: true,
+    toggleActions: "play none none reverse",
   },
 });
 
