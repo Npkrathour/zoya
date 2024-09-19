@@ -1097,7 +1097,7 @@ html.lenis body {
 
 .swiper-pagination-bullet {
   background: transparent none repeat scroll 0 0;
-  border: 1px solid #ee0f6f;
+  border: 1px solid #9c4b20;
   border-radius: 10px;
   display: inline-block;
   height: 10px;
@@ -1108,8 +1108,8 @@ html.lenis body {
 }
 
 .swiper-pagination-bullet-active {
-  background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
-  background: rgba(0, 0, 0, 0) linear-gradient(to right, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #9c4b20 0%, #c49884 100%) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, #9c4b20 0%, #f89482 100%) repeat scroll 0 0;
   border: medium none;
   height: 12px;
   opacity: 1;
