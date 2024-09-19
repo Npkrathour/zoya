@@ -1,28 +1,4 @@
 @media (min-width: 769px) and (max-width: 1200px) {
-  .akshay_tritiya_banner {
-    height: auto;
-  }
-  .celebration_sec {
-    padding: 50px 0px;
-  }
-  .cele-left {
-    padding-left: 30px;
-  }
-  .cele-right {
-    padding-right: 30px;
-  }
-  .visit_store_sec {
-    padding: 50px 0 0px;
-  }
-  .zoya_promise {
-    padding: 0px 0px 50px;
-  }
-  .visit_store_box {
-    margin: 0 15px;
-  }
-  .w-\[400px\] {
-    width: 90vw;
-  }
   /* =====================New Zoya css================ */
   .modal-popUpTwo {
     bottom: 9%;
@@ -286,6 +262,9 @@
     & h3 {
       font-size: 16px;
     }
+  }
+  .mb-pb {
+    padding: 30px 0;
   }
 }
 @media (max-width: 560px) {
