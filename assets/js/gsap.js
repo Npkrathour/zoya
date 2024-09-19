@@ -218,7 +218,7 @@ function openModalOne() {
     // Hide the modal after 2 seconds
     setTimeout(function () {
       one.classList.remove("show");
-    }, 2000);
+    }, 10000);
   }
 }
 
@@ -231,6 +231,6 @@ function openModalTwo() {
     // Hide the modal after 2 seconds
     setTimeout(function () {
       two.classList.remove("show");
-    }, 2000);
+    }, 10000);
   }
 }

@@ -23,6 +23,19 @@
   .w-\[400px\] {
     width: 90vw;
   }
+  /* =====================New Zoya css================ */
+  .modal-popUpTwo {
+    bottom: 9%;
+    max-width: 30%;
+    width: 100%;
+  }
+  .modal-popUp {
+    position: absolute;
+    bottom: 10%;
+    right: 8%;
+    max-width: 30%;
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
