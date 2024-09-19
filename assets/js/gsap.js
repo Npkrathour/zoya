@@ -195,20 +195,29 @@ var swiper = new Swiper(".swiper-container.two", {
   },
 });
 
-function openModal() {
+function openModalOne() {
   var one = document.getElementById("modal-btn");
-  if (one.classList.contains("show")) {
-    one.classList.remove("show");
-  } else {
+
+  // Show the modal
+  if (!one.classList.contains("show")) {
     one.classList.add("show");
+
+    // Hide the modal after 2 seconds
+    setTimeout(function () {
+      one.classList.remove("show");
+    }, 3000);
   }
 }
 
 function openModalTwo() {
-  var two = document.getElementById("modal-btn-1");
-  if (two.classList.contains("show")) {
-    two.classList.remove("show");
-  } else {
+  var two = document.getElementById("modalTwo");
+  // Show the modal
+  if (!two.classList.contains("show")) {
     two.classList.add("show");
+
+    // Hide the modal after 2 seconds
+    setTimeout(function () {
+      two.classList.remove("show");
+    }, 3000);
   }
 }
