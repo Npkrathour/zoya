@@ -1299,18 +1299,9 @@ html.lenis body {
   bottom: 27%;
   left: 8%;
   background-color: #ffffff;
+  z-index: 9;
 }
 
-.modal-popUp {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.modal-popUp.show {
-  opacity: 1;
-  visibility: visible;
-}
 .modal-popUp {
   display: none;
 }
@@ -1332,6 +1323,7 @@ html.lenis body {
   bottom: 35%;
   right: 20%;
   background-color: #ffffff;
+  z-index: 9;
 }
 .modal-popUpTwo h3 {
   font-size: 20px;
