@@ -1367,10 +1367,10 @@ html.lenis body {
     font-weight: 600;
   }
   & p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--blackColor);
-    line-height: 27px;
+    line-height: 24px;
     padding: 10px 0;
   }
 }
