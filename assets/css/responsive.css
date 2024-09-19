@@ -304,6 +304,11 @@
     bottom: 20%;
     left: 11%;
   }
+  .explore-products-section {
+    & h3 {
+      font-size: 16px;
+    }
+  }
 }
 @media (max-width: 400px) {
   .modal-popUpTwo {
