@@ -276,4 +276,62 @@
   }
 }
 @media (max-width: 560px) {
+  .modal-popUpTwo {
+    position: absolute;
+    bottom: 20%;
+    right: 8%;
+    background-color: #ffffff;
+    z-index: 9;
+    max-width: 80%;
+    width: 100%;
+  }
+  .modal-popUp {
+    position: absolute;
+    bottom: 20%;
+    right: 8%;
+    background-color: #ffffff;
+    z-index: 9;
+    max-width: 80%;
+    width: 100%;
+  }
+  .popUpButton {
+    position: absolute;
+    bottom: 39%;
+    right: 9%;
+  }
+  .toggle-btn {
+    position: absolute;
+    bottom: 20%;
+    left: 11%;
+  }
+}
+@media (max-width: 400px) {
+  .modal-popUpTwo {
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+    background-color: #ffffff;
+    z-index: 9;
+    max-width: 80%;
+    width: 100%;
+  }
+  .modal-popUp {
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+    background-color: #ffffff;
+    z-index: 9;
+    max-width: 80%;
+    width: 100%;
+  }
+  .popUpButton {
+    position: absolute;
+    bottom: 39%;
+    right: 9%;
+  }
+  .toggle-btn {
+    position: absolute;
+    bottom: 20%;
+    left: 11%;
+  }
 }
