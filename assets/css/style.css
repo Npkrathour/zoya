@@ -1281,15 +1281,19 @@ html.lenis body {
   transform: scaleX(1);
   transform-origin: left;
 }
-
-.cta-box a {
-  border: 1px solid var(--ctaColor);
-  border-radius: 0;
-  padding: 10px 30px;
+.cta-box-discover a {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--ctaColor);
+  border: 1px solid var(--ctaColor);
+  padding: 10px 30px;
+  text-shadow: 0 0 #000;
 }
+.cta-box-discover a:hover {
+  color: var(--ctaColor);
+  border: 1px solid var(--ctaColor);
+}
+
 .cta-box a:hover {
   border: 1px solid var(--ctaColor);
   color: var(--ctaColor);
