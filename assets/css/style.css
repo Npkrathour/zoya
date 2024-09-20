@@ -597,7 +597,10 @@ html.lenis body {
     margin: 0 auto;
   }
 }
-
+/* .Alive-section {
+  background: #d9d9d9;
+  width: 100%;
+} */
 .reveal-section {
   & {
     background-image: url(../images/Zoya\ 2024_Day1\ 099\ 1.png);
