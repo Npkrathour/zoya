@@ -208,6 +208,23 @@ var swiper = new Swiper(".swiper-container.two", {
   },
 });
 
+const tl = gsap.timeline();
+
+tl.from(".col-lg-3", {
+  opacity: 0,
+  y: 50,
+  duration: 1,
+  stagger: 0.2,
+  scrollTrigger: {
+    trigger: ".explore-products-section",
+    scroller: "body",
+    start: "top 80%", // Trigger when the section is 80% visible from the top
+    end: "bottom 50%", // End when 20% of the section is left
+    scrub: 2, // Slow down animation tied to scroll
+  },
+  stagger: 0.3, // Delay between elements
+});
+
 function openModalOne() {
   var one = document.getElementById("modal-btn");
 
