@@ -270,20 +270,20 @@
 @media (max-width: 560px) {
   .modal-popUpTwo {
     position: absolute;
-    bottom: 20%;
-    right: 8%;
+    bottom: 12%;
+    right: 20%;
     background-color: #ffffff;
     z-index: 9;
-    max-width: 80%;
+    max-width: 60%;
     width: 100%;
   }
   .modal-popUp {
     position: absolute;
-    bottom: 20%;
-    right: 8%;
+    bottom: 12%;
+    left: 20%;
     background-color: #ffffff;
     z-index: 9;
-    max-width: 80%;
+    max-width: 60%;
     width: 100%;
   }
   .popUpButton {
