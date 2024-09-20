@@ -1386,12 +1386,19 @@ html.lenis body {
   width: 30px;
 }
 
-.cta-box.book {
+.cta-box a {
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--ctaColor);
+  padding: 10px 60px;
+}
+.cta-box.book a {
   background-color: var(--ctaColor);
   font-size: 16px;
   font-weight: 500;
+  border: 1px solid var(--ctaColor);
+  padding: 10px 60px;
 }
-
 .zoya-products-container {
   & h4 {
     font-size: 32px;
