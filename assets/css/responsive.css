@@ -2,14 +2,14 @@
   /* =====================New Zoya css================ */
   .modal-popUpTwo {
     bottom: 9%;
-    max-width: 30%;
+    max-width: 20%;
     width: 100%;
   }
   .modal-popUp {
     position: absolute;
     bottom: 10%;
     right: 8%;
-    max-width: 30%;
+    max-width: 20%;
     width: 100%;
   }
 }
@@ -306,19 +306,19 @@
   .modal-popUpTwo {
     position: absolute;
     bottom: 8%;
-    right: 8%;
+    right: 21%;
     background-color: #ffffff;
     z-index: 9;
-    max-width: 80%;
+    max-width: 50%;
     width: 100%;
   }
   .modal-popUp {
     position: absolute;
     bottom: 8%;
-    right: 8%;
+    left: 29%;
     background-color: #ffffff;
     z-index: 9;
-    max-width: 80%;
+    max-width: 50%;
     width: 100%;
   }
   .popUpButton {

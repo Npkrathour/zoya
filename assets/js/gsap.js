@@ -9,19 +9,6 @@ gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
 
-// gsap.to(".zoya-details-section", {
-//   // scale: 0.009,
-//   duration: 1.5,
-//   with: "100%",
-//   scrollTrigger: {
-//     trigger: ".top-banner",
-//     start: "top 10%",
-//     end: "bottom 70%",
-//     scrub: 2,
-//   },
-//   duration: 1,
-//   height: "5vh",
-// });
 // ==========================Overlay scroll Trigger==========
 ScrollTrigger.matchMedia({
   // Desktop: min-width 1024px
@@ -235,7 +222,7 @@ function openModalOne() {
     // Hide the modal after 2 seconds
     setTimeout(function () {
       one.classList.remove("show");
-    }, 2000);
+    }, 10000);
   }
 }
 
@@ -248,6 +235,6 @@ function openModalTwo() {
     // Hide the modal after 2 seconds
     setTimeout(function () {
       two.classList.remove("show");
-    }, 2000);
+    }, 10000);
   }
 }

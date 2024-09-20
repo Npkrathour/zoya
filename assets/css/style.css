@@ -1287,7 +1287,7 @@ html.lenis body {
   color: var(--ctaColor);
 }
 .cta-box a:hover {
-  border: 2px solid var(--ctaColor);
+  border: 1px solid var(--ctaColor);
   color: var(--ctaColor);
 }
 
